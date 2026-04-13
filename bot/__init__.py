@@ -58,7 +58,7 @@ intervals = {
 }
 
 # Global state dicts
-qbit_options   = {}   
+qbit_options   = {}   # ✅ FIX ADDED
 user_data      = {}
 queued_dl      = {}
 queued_up      = {}
