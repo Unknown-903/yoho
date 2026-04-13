@@ -1,0 +1,53 @@
+# Core
+asyncio
+uvloop
+aiofiles
+aioshutil
+
+# Pyrogram (Telegram client)
+pyrogram==2.0.106
+tgcrypto==1.2.5
+
+# Database
+motor==3.3.2
+pymongo>=4.5,<4.7
+dnspython==2.4.2
+
+# Scheduling
+apscheduler
+
+# Media processing
+Pillow>=10.2.0
+natsort
+
+# Utilities
+aiohttp>=3.9.1
+pytz>=2023.3.post1
+psutil>=5.9.7
+requests
+httpx
+python-magic
+xattr
+
+# Speedtest
+speedtest-cli>=2.1.3
+
+# Telegraph / Clone / Search
+telegraph
+anytree
+feedparser
+lxml
+langcodes
+
+# GDrive (clone feature)
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+
+# Misc
+tenacity
+ElectroCrypto
+pyshorteners
+truelink
+cloudscraper
+yt-dlp[default,curl-cffi]
