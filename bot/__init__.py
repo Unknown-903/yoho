@@ -58,23 +58,24 @@ intervals = {
 }
 
 # Global state dicts
-user_data       = {}
-queued_dl       = {}
-queued_up       = {}
-status_dict     = {}
-task_dict       = {}
-rss_dict        = {}
-auth_chats      = {}
-sudo_users      = []
-multi_tags      = set()
-non_queued_dl   = set()
-non_queued_up   = set()
+qbit_options   = {}   
+user_data      = {}
+queued_dl      = {}
+queued_up      = {}
+status_dict    = {}
+task_dict      = {}
+rss_dict       = {}
+auth_chats     = {}
+sudo_users     = []
+multi_tags     = set()
+non_queued_dl  = set()
+non_queued_up  = set()
 excluded_extensions = []
 included_extensions = []
 shorteners_list = []
-drives_names    = []
-drives_ids      = []
-index_urls      = []
+drives_names   = []
+drives_ids     = []
+index_urls     = []
 
 # Locks
 task_dict_lock      = Lock()
