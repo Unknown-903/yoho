@@ -1,10 +1,8 @@
 from asyncio import Lock
 
 from pyrogram import Client, enums
-from pyrogram.types import LinkPreviewOptions
 
 from bot import LOGGER
-
 from .config_manager import Config
 
 
@@ -21,6 +19,7 @@ class TgClient:
     async def start_bot(cls):
         LOGGER.info("Creating client from BOT_TOKEN")
         cls.ID = Config.BOT_TOKEN.split(":", 1)[0]
+
         cls.bot = Client(
             cls.ID,
             Config.TELEGRAM_API,
@@ -33,8 +32,9 @@ class TgClient:
             max_message_cache_size=15000,
             max_topic_cache_size=15000,
             sleep_threshold=0,
-            link_preview_options=LinkPreviewOptions(is_disabled=True),
+            disable_web_page_preview=True,   # ✅ FIX
         )
+
         await cls.bot.start()
         cls.NAME = cls.bot.me.username
 
@@ -55,12 +55,15 @@ class TgClient:
                     max_concurrent_transmissions=100,
                     max_message_cache_size=15000,
                     max_topic_cache_size=15000,
-                    link_preview_options=LinkPreviewOptions(is_disabled=True),
+                    disable_web_page_preview=True,   # ✅ FIX
                 )
+
                 await cls.user.start()
                 cls.IS_PREMIUM_USER = cls.user.me.is_premium
+
                 if cls.IS_PREMIUM_USER:
                     cls.MAX_SPLIT_SIZE = 4194304000
+
             except Exception as e:
                 LOGGER.error(f"Failed to start client from USER_SESSION_STRING. {e}")
                 cls.IS_PREMIUM_USER = False
