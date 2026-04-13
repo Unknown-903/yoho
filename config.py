@@ -4,15 +4,15 @@
 # ══════════════════════════════════════════════════════
 
 # ── Core Telegram ──────────────────────────────────────
-API_ID           = 0              # From my.telegram.org
-API_HASH         = ""             # From my.telegram.org
-BOT_TOKEN        = ""             # From @BotFather
-OWNER_ID         = 0              # Your Telegram user ID
-SUDO_USERS       = ""             # Space-separated user IDs
+API_ID           = 29177249        # From my.telegram.org
+API_HASH         = "f1c8d021f35a8a0391325bda480e30ad"             # From my.telegram.org
+BOT_TOKEN        = "8608657793:AAEhimflWNdYUK-Zx9rLrIC-3Tat5ihE31g"             # From @BotFather
+OWNER_ID         = 7224871892           # Your Telegram user ID
+SUDO_USERS       = "7224871892"             # Space-separated user IDs
 AUTHORIZED_CHATS = ""             # Space-separated chat IDs
 
 # ── Database ───────────────────────────────────────────
-DATABASE_URL     = ""             # MongoDB connection string
+DATABASE_URL     = "mongodb+srv://Toonpro12:animebash@cluster0.e6hpn8l.mongodb.net/?retryWrites=true&w=majority"             # MongoDB connection string
 
 # ── Channels ───────────────────────────────────────────
 LOG_CHAT_ID      = 0              # Log channel ID (negative)
